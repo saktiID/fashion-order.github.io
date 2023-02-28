@@ -194,7 +194,8 @@ $(document).ready(function () {
 
         let sendWa = (data) => {
             let msg = `PESANAN%20SAYA%0A%0ALink%3A%20${data.link}%0ANama%3A%20${data.nama}%0ANomor%3A%20${data.nomor}%0AProvinsi%3A%20${data.prov}%0AKabupaten%3A%20${data.kab}%0AKecamatan%3A%20${data.kec}%0AKelurahan%3A%20${data.kel}%0AKeterangan%3A%20${data.ket}%0A%0AMohon%20segera%20konfirmasi%20pesanan%20saya%20ya%21%0ATerimakasih%2C`
-            let myNumb = '6285607369678'
+            // let myNumb = '6285607369678'
+            let myNumb = '62895325692287'
             let url = `https://api.whatsapp.com/send?phone=${myNumb}&text=${msg}`
             window.open(url);
         }
